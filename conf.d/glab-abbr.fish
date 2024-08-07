@@ -2,6 +2,7 @@ abbr -a -- gl glab
 
 abbr -a -- glc 'glab ci'
 abbr -a -- glcl 'glab ci list'
+abbr -a -- glcL 'glab ci lint'
 abbr -a -- glcv 'glab ci view'
 
 abbr -a -- glm 'glab mr'
