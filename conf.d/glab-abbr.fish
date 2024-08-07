@@ -6,6 +6,7 @@ abbr -a -- glcv 'glab ci view'
 
 abbr -a -- glm 'glab mr'
 abbr -a -- glmc 'glab mr create'
+abbr -a -- glml 'glab mr list'
 abbr -a -- glmm 'glab mr merge'
 abbr -a -- glmu 'glab mr update'
 
