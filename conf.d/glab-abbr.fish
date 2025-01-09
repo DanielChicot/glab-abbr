@@ -9,6 +9,7 @@ abbr -a -- glct 'glab ci trace'
 abbr -a -- glcv 'glab ci view'
 
 abbr -a -- glm 'glab mr'
+abbr -a -- glmC 'glab mr close'
 abbr -a -- glmc 'glab mr create'
 abbr -a -- glmd 'glab mr diff'
 abbr -a -- glml 'glab mr list'
