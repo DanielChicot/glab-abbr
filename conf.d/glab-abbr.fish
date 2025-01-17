@@ -5,6 +5,7 @@ abbr -a -- glcl 'glab ci list'
 abbr -a -- glcL 'glab ci lint'
 abbr -a -- glcr 'glab ci run'
 abbr -a -- glcrm 'glab ci run -b main'
+abbr -a -- glcs 'glab ci status'
 abbr -a -- glct 'glab ci trace'
 abbr -a -- glcv 'glab ci view'
 
