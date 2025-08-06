@@ -11,7 +11,7 @@ function gitlab_create_merge_request -a ticket description
 
     glab mr create \
         --assignee Daniel.Chicot \
-        --source-branch feature/$argv[1] \
+        --source-branch $argv[1] \
         --create-source-branch \
         --target-branch (git_main_branch) \
         --squash-before-merge \
