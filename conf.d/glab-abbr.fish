@@ -42,3 +42,6 @@ abbr -a -- glvgs 'glab variable get --scope'
 abbr -a -- glvl 'glab variable list'
 abbr -a -- glvs 'glab variable set'
 abbr -a -- glvss 'glab variable set --scope'
+abbr -a -- glvu 'glab variable update'
+abbr -a -- glvus 'glab variable update --scope'
+
