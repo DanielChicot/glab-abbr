@@ -1,6 +1,8 @@
 abbr -a -- gl glab
 
 abbr -a -- glc 'glab ci'
+abbr -a -- glcc 'glab ci cancel'
+abbr -a -- glccp 'glab ci cancel -p'
 abbr -a -- glcl 'glab ci list'
 abbr -a -- glcL 'glab ci lint'
 abbr -a -- glcr 'glab ci run'
