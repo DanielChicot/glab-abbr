@@ -2,7 +2,8 @@ abbr -a -- gl glab
 
 abbr -a -- glc 'glab ci'
 abbr -a -- glcc 'glab ci cancel'
-abbr -a -- glccp 'glab ci cancel -p'
+abbr -a -- glccj 'glab ci cancel job'
+abbr -a -- glccp 'glab ci cancel pipeline'
 abbr -a -- glcl 'glab ci list'
 abbr -a -- glcL 'glab ci lint'
 abbr -a -- glcr 'glab ci run'
