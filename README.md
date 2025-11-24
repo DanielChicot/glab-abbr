@@ -251,7 +251,7 @@ glvl | grep -i secret
 
 ## License
 
-Apache 2.0
+MIT
 
 ## Related Projects
 
