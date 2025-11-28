@@ -87,6 +87,7 @@ glcL
 | `glml` | `glab mr list` | List MRs |
 | `glmm` | `glab mr merge` | Merge MR |
 | `glmmdsy` | `glab mr merge -dsy` | Merge (delete+squash+yes) |
+| `glmr` | `glab mr rebase` | Rebase MR |
 | `glmu` | `glab mr update` | Update MR |
 | `glmur` | `glab mr update --ready` | Mark ready |
 | `glmut` | `glab mr update --title` | Update title |
