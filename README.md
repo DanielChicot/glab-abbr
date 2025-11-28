@@ -76,7 +76,7 @@ glcL
 | `glcTp` | `glab ci trigger -p` | Trigger pipeline job |
 | `glcv` | `glab ci view` | View pipeline |
 
-### Merge Request Commands (11)
+### Merge Request Commands (12)
 
 | Abbreviation | Command | Description |
 |--------------|---------|-------------|
