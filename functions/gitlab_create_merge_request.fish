@@ -26,7 +26,7 @@ function gitlab_create_merge_request -a ticket description
 
     if test $status -eq 0
         if set -q _flag_w
-            git worktree add --guess-remote ./worktrees/$argv[1]/(basename (pwd)) $argv[1]
+            git worktree add --guess-remote ../$argv[1]/(basename (pwd)) $argv[1]
         end
     end
 end
