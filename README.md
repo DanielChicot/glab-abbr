@@ -4,8 +4,8 @@ Fish shell abbreviations for the [GitLab CLI](https://gitlab.com/gitlab-org/cli)
 
 ## Features
 
-- **45 abbreviations** covering CI/CD, merge requests, releases, and variables
-- **Intuitive naming**: `glc` (ci), `glm` (mr), `glr` (release), `glv` (variable)
+- **76 abbreviations** covering CI/CD, merge requests, issues, releases, variables, repos, auth, and schedules
+- **Intuitive naming**: `glc` (ci), `glm` (mr), `gli` (issue), `glr` (release), `glv` (variable), `glp` (repo/project), `gla` (auth), `gls` (schedule)
 - **Helper function** for automated MR creation with worktree support
 - **Zero configuration** - works immediately after installation
 
@@ -55,14 +55,17 @@ glcL
 |--------------|---------|-------------|
 | `gl` | `glab` | Base GitLab CLI |
 
-### CI/CD Commands (17)
+### CI/CD Commands (20)
 
 | Abbreviation | Command | Description |
 |--------------|---------|-------------|
 | `glc` | `glab ci` | Base CI command |
+| `glca` | `glab ci artifact` | Download CI artifacts |
 | `glcc` | `glab ci cancel` | Cancel pipeline/job |
 | `glccj` | `glab ci cancel job` | Cancel job |
 | `glccp` | `glab ci cancel pipeline` | Cancel pipeline |
+| `glcd` | `glab ci delete` | Delete pipeline |
+| `glcf` | `glab ci config` | Render/inspect CI config |
 | `glcl` | `glab ci list` | List pipelines |
 | `glcL` | `glab ci lint` | Validate .gitlab-ci.yml |
 | `glcr` | `glab ci run` | Run pipeline |
@@ -70,28 +73,77 @@ glcL
 | `glcR` | `glab ci retry` | Retry job |
 | `glcRp` | `glab ci retry -p` | Retry pipeline |
 | `glcs` | `glab ci status` | Pipeline status |
+| `glcsl` | `glab ci status --live` | Live pipeline status |
 | `glct` | `glab ci trace` | Trace job logs |
 | `glctp` | `glab ci trace -p` | Trace pipeline |
 | `glcT` | `glab ci trigger` | Trigger manual job |
 | `glcTp` | `glab ci trigger -p` | Trigger pipeline job |
 | `glcv` | `glab ci view` | View pipeline |
 
-### Merge Request Commands (12)
+### Merge Request Commands (19)
 
 | Abbreviation | Command | Description |
 |--------------|---------|-------------|
 | `glm` | `glab mr` | Base MR command |
+| `glma` | `glab mr approve` | Approve MR |
+| `glmA` | `glab mr revoke` | Revoke approval |
 | `glmc` | `glab mr create` | Create MR |
 | `glmC` | `glab mr close` | Close MR |
+| `glmco` | `glab mr checkout` | Check out MR locally |
 | `glmd` | `glab mr diff` | View MR diff |
 | `glml` | `glab mr list` | List MRs |
 | `glmm` | `glab mr merge` | Merge MR |
 | `glmmdsy` | `glab mr merge -dsy` | Merge (delete+squash+yes) |
+| `glmn` | `glab mr note` | Add note/comment |
 | `glmr` | `glab mr rebase` | Rebase MR |
+| `glmR` | `glab mr reopen` | Reopen MR |
+| `glms` | `glab mr subscribe` | Subscribe to MR |
+| `glmt` | `glab mr todo` | Add todo for MR |
 | `glmu` | `glab mr update` | Update MR |
 | `glmur` | `glab mr update --ready` | Mark ready |
 | `glmut` | `glab mr update --title` | Update title |
 | `glmv` | `glab mr view` | View MR |
+
+### Issue Commands (6)
+
+| Abbreviation | Command | Description |
+|--------------|---------|-------------|
+| `gli` | `glab issue` | Base issue command |
+| `glic` | `glab issue create` | Create issue |
+| `gliC` | `glab issue close` | Close issue |
+| `glil` | `glab issue list` | List issues |
+| `gliu` | `glab issue update` | Update issue |
+| `gliv` | `glab issue view` | View issue |
+
+### Auth Commands (4)
+
+| Abbreviation | Command | Description |
+|--------------|---------|-------------|
+| `gla` | `glab auth` | Base auth command |
+| `glal` | `glab auth login` | Authenticate to GitLab |
+| `glaL` | `glab auth logout` | Sign out |
+| `glas` | `glab auth status` | Show auth status |
+
+### Repo Commands (4)
+
+Note: GitLab calls repos "projects" internally — the `glp` prefix matches that, and avoids clashing with `glr` (release).
+
+| Abbreviation | Command | Description |
+|--------------|---------|-------------|
+| `glp` | `glab repo` | Base repo command |
+| `glpc` | `glab repo clone` | Clone a repo |
+| `glpf` | `glab repo fork` | Fork a repo |
+| `glpv` | `glab repo view` | View repo details |
+
+### Schedule Commands (5)
+
+| Abbreviation | Command | Description |
+|--------------|---------|-------------|
+| `gls` | `glab schedule` | Base schedule command |
+| `glsc` | `glab schedule create` | Create pipeline schedule |
+| `glsl` | `glab schedule list` | List schedules |
+| `glsr` | `glab schedule run` | Run scheduled pipeline now |
+| `glsv` | `glab schedule view` | View schedule |
 
 ### Release Commands (7)
 
